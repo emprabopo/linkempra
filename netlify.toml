@@ -1,6 +1,7 @@
 [build]
-  publish = "/"
+  publish         = "/"                # Veröffentlichungsordner bleibt das Repo-Root
+  edge_functions  = "edge-functions"   # hier sagst Du Netlify, wo Deine Edge Fns liegen
 
 [[edge_functions]]
-  path     = "/go"
-  function = "redirect"
+  path     = "/go"      # der Pfad, unter dem Dein Redirect später erreichbar ist
+  function = "redirect" # der Name der JS-Datei (redirect.js)
