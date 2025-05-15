@@ -1,16 +1,6 @@
 [build]
   publish = "/"
 
-# Edge Functions nutzen V8-Isolates und werden immer 'warm' gehalten
 [[edge_functions]]
   path     = "/go"
-  function = "redirect"
-[build]
-  publish = "/"
-
-[functions]
-  node_bundler = "esbuild"
-
-[[edge_functions]]
-  path = "/go"
   function = "redirect"
