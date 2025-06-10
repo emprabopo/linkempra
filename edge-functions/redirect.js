@@ -3,9 +3,6 @@ export default async (request, context) => {
     const urls = [
       "https://www.soscisurvey.de/egp/",
       "https://www.soscisurvey.de/kgnpp/",
-      "https://www.soscisurvey.de/kgpp/",
-      "https://www.soscisurvey.de/pegp/",
-      "https://www.soscisurvey.de/pkgnpp/",
       "https://www.soscisurvey.de/pkgpp/"
     ];
 
