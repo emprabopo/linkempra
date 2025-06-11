@@ -2,11 +2,10 @@ export default async (request, context) => {
   try {
     const urls = [
       "https://www.soscisurvey.de/egp/",    // 1x
-      "https://www.soscisurvey.de/kgnpp/",  // 2x
-      "https://www.soscisurvey.de/pkgpp/"   // 3x
+      "https://www.soscisurvey.de/pkgpp/"   // 8x
     ];
 
-    const redirectPattern = [0, 1, 1, 2, 2, 2]; // Index im urls-Array
+    const redirectPattern = [0, 1, 1, 1, 1, 1, 1, 1, 1]; // 1x egp, 8x pkgpp
 
     const UPSTASH_URL   = Deno.env.get("UPSTASH_REDIS_REST_URL");
     const UPSTASH_TOKEN = Deno.env.get("UPSTASH_REDIS_REST_TOKEN");
