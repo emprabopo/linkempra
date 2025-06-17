@@ -1,7 +1,7 @@
 export default async (request, context) => {
   try {
     // Antwort anzeigen statt Weiterleitung
-    const message = "Dieser Fragebogen ist geschlossen";
+    const message = "Diese Erhebung wurde beendet";
     return new Response(
       `<html><body><h1>${message}</h1></body></html>`,
       {
